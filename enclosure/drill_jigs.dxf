@@ -31,9 +31,9 @@ $EXTMIN
   9
 $EXTMAX
  10
-5.1
+5.05
  20
-3.052
+3
  30
 0
   9
@@ -91,7 +91,7 @@ STANDARD
   9
 $CLAYER
   8
-0
+solar_panel_hole
   9
 $CELTYPE
   6
@@ -1121,9 +1121,9 @@ AcDbViewportTableRecord
  21
 1
  12
-5.124734666935945
+5.813555268416659
  22
-2.638737993972156
+2.135497194215203
  13
 0
  23
@@ -1149,7 +1149,7 @@ AcDbViewportTableRecord
  37
 0
  40
-8.669386702750838
+7.624790415787905
  41
 1.756986634264885
  42
@@ -2283,11 +2283,55 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
+construction
+ 70
+    0
+ 62
+    8
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
 sensor_hole_jig
  70
     0
  62
     5
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+solar_panel_hole
+ 70
+    0
+ 62
+    3
   6
 CONTINUOUS
 370
@@ -2311,7 +2355,7 @@ AcDbSymbolTable
   0
 STYLE
   5
-4C
+4E
 330
 2
 100
@@ -2395,7 +2439,7 @@ ACAD
   0
 APPID
   5
-4D
+4F
 330
 9
 100
@@ -2427,7 +2471,7 @@ AcDbDimStyleTable
   0
 DIMSTYLE
 105
-4E
+50
 330
 A
 100
@@ -2701,7 +2745,7 @@ ENTITIES
   0
 LWPOLYLINE
   5
-4F
+51
 100
 AcDbEntity
   8
@@ -2739,7 +2783,7 @@ AcDbPolyline
   0
 CIRCLE
   5
-50
+52
 100
 AcDbEntity
   8
@@ -2761,7 +2805,7 @@ AcDbCircle
   0
 CIRCLE
   5
-51
+53
 100
 AcDbEntity
   8
@@ -2783,7 +2827,7 @@ AcDbCircle
   0
 LWPOLYLINE
   5
-52
+54
 100
 AcDbEntity
   8
@@ -2821,7 +2865,7 @@ AcDbPolyline
   0
 CIRCLE
   5
-53
+55
 100
 AcDbEntity
   8
@@ -2843,7 +2887,7 @@ AcDbCircle
   0
 CIRCLE
   5
-54
+56
 100
 AcDbEntity
   8
@@ -2865,7 +2909,7 @@ AcDbCircle
   0
 CIRCLE
   5
-55
+57
 100
 AcDbEntity
   8
@@ -2887,7 +2931,7 @@ AcDbCircle
   0
 CIRCLE
   5
-56
+58
 100
 AcDbEntity
   8
@@ -2904,6 +2948,242 @@ AcDbCircle
 2.750000000000001
  20
 1.667999999999999
+ 40
+0.04
+  0
+LINE
+  5
+59
+100
+AcDbEntity
+  8
+solar_panel_hole
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+3.6
+ 20
+-5.551115123125783e-17
+ 11
+5.05
+ 21
+-5.551115123125783e-17
+  0
+LINE
+  5
+5A
+100
+AcDbEntity
+  8
+solar_panel_hole
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+3.6
+ 20
+-5.551115123125783e-17
+ 11
+3.6
+ 21
+2.16
+  0
+LINE
+  5
+5B
+100
+AcDbEntity
+  8
+solar_panel_hole
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+5.05
+ 20
+-5.551115123125783e-17
+ 11
+5.05
+ 21
+2.16
+  0
+LINE
+  5
+5C
+100
+AcDbEntity
+  8
+solar_panel_hole
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+3.6
+ 20
+2.16
+ 11
+5.05
+ 21
+2.16
+  0
+LINE
+  5
+5D
+100
+AcDbEntity
+  8
+construction
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+3.6
+ 20
+2.16
+ 11
+3.6
+ 21
+2.35
+  0
+LINE
+  5
+5E
+100
+AcDbEntity
+  8
+construction
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+5.05
+ 20
+2.16
+ 11
+5.05
+ 21
+2.35
+  0
+LINE
+  5
+5F
+100
+AcDbEntity
+  8
+construction
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+3.6
+ 20
+2.35
+ 11
+5.05
+ 21
+-5.551115123125783e-17
+  0
+LINE
+  5
+60
+100
+AcDbEntity
+  8
+construction
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+5.05
+ 20
+2.35
+ 11
+3.6
+ 21
+-5.551115123125783e-17
+  0
+CIRCLE
+  5
+61
+100
+AcDbEntity
+  8
+solar_panel_hole
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+4.325
+ 20
+1.175
+ 40
+0.25
+  0
+CIRCLE
+  5
+62
+100
+AcDbEntity
+  8
+solar_panel_hole
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+4.325
+ 20
+1.175
  40
 0.04
   0
