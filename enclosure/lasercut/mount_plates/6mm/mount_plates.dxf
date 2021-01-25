@@ -229,9 +229,9 @@ AcDbViewportTableRecord
 21
 1
 12
-8.35307303243
+8.2862484482
 22
-4.64430860603
+5.34596674077
 13
 0
 23
@@ -1631,7 +1631,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1655,7 +1655,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1683,7 +1683,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1707,7 +1707,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1735,7 +1735,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1759,7 +1759,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1787,7 +1787,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1811,7 +1811,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1839,7 +1839,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1863,7 +1863,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1891,7 +1891,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1915,7 +1915,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1943,7 +1943,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1967,7 +1967,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -1995,7 +1995,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2019,7 +2019,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2047,7 +2047,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2071,7 +2071,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2099,7 +2099,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2123,7 +2123,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2151,7 +2151,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2175,7 +2175,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2203,7 +2203,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2227,7 +2227,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2255,7 +2255,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2279,7 +2279,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2307,7 +2307,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2331,7 +2331,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2359,7 +2359,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2383,7 +2383,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2411,7 +2411,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2435,7 +2435,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2459,7 +2459,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2487,7 +2487,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2515,7 +2515,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2539,7 +2539,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2567,7 +2567,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2591,7 +2591,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2619,7 +2619,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2643,7 +2643,7 @@ LINE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2667,7 +2667,7 @@ ARC
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2695,7 +2695,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2717,7 +2717,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2739,7 +2739,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2761,7 +2761,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2783,7 +2783,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2805,7 +2805,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2827,7 +2827,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2849,7 +2849,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2871,7 +2871,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2893,7 +2893,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2915,7 +2915,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2937,7 +2937,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2959,7 +2959,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -2981,7 +2981,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3003,7 +3003,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3025,7 +3025,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3047,7 +3047,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3069,7 +3069,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3091,7 +3091,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3113,7 +3113,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3135,7 +3135,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3157,7 +3157,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3179,7 +3179,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3201,7 +3201,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3223,7 +3223,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3245,7 +3245,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3267,7 +3267,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3289,7 +3289,7 @@ CIRCLE
 100
 AcDbEntity
 8
-vector
+nocut
 6
 ByLayer
 62
@@ -3311,7 +3311,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3335,7 +3335,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3363,7 +3363,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3387,7 +3387,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3415,7 +3415,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3439,7 +3439,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3467,7 +3467,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3491,7 +3491,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3519,7 +3519,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3543,7 +3543,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3571,7 +3571,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3595,7 +3595,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3623,7 +3623,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3647,7 +3647,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3675,7 +3675,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3699,7 +3699,7 @@ ARC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3727,7 +3727,7 @@ LINE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3751,7 +3751,7 @@ A0
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3779,7 +3779,7 @@ A1
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3803,7 +3803,7 @@ A2
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3831,7 +3831,7 @@ A3
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3855,7 +3855,7 @@ A4
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3883,7 +3883,7 @@ A5
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3907,7 +3907,7 @@ A6
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3935,7 +3935,7 @@ A7
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3959,7 +3959,7 @@ A8
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -3987,7 +3987,7 @@ A9
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4011,7 +4011,7 @@ AA
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4039,7 +4039,7 @@ AB
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4063,7 +4063,7 @@ AC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4091,7 +4091,7 @@ AD
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4115,7 +4115,7 @@ AE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4139,7 +4139,7 @@ AF
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4167,7 +4167,7 @@ B0
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4195,7 +4195,7 @@ B1
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4219,7 +4219,7 @@ B2
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4247,7 +4247,7 @@ B3
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4271,7 +4271,7 @@ B4
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4299,7 +4299,7 @@ B5
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4323,7 +4323,7 @@ B6
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4347,7 +4347,7 @@ B7
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4375,7 +4375,7 @@ B8
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4397,7 +4397,7 @@ B9
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4419,7 +4419,7 @@ BA
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4441,7 +4441,7 @@ BB
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4463,7 +4463,7 @@ BC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4485,7 +4485,7 @@ BD
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4507,7 +4507,7 @@ BE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4529,7 +4529,7 @@ BF
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4551,7 +4551,7 @@ C0
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4573,7 +4573,7 @@ C1
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4595,7 +4595,7 @@ C2
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4617,7 +4617,7 @@ C3
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4639,7 +4639,7 @@ C4
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4661,7 +4661,7 @@ C5
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4683,7 +4683,7 @@ C6
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4705,7 +4705,7 @@ C7
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4727,7 +4727,7 @@ C8
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4749,7 +4749,7 @@ C9
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4771,7 +4771,7 @@ CA
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4793,7 +4793,7 @@ CB
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4815,7 +4815,7 @@ CC
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4837,7 +4837,7 @@ CD
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4859,7 +4859,7 @@ CE
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4881,7 +4881,7 @@ CF
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4903,7 +4903,7 @@ D0
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4925,7 +4925,7 @@ D1
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4947,7 +4947,7 @@ D2
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
@@ -4969,7 +4969,7 @@ D3
 100
 AcDbEntity
 8
-nocut
+vector
 6
 ByLayer
 62
