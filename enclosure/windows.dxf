@@ -23,17 +23,17 @@ $INSBASE
   9
 $EXTMIN
  10
--0.6625
+0.2375
  20
--0.6625
+0.15
  30
 0
   9
 $EXTMAX
  10
-3.162500000000001
+3.4625
  20
-4.6625
+4.7625
  30
 0
   9
@@ -311,7 +311,7 @@ $DIMUPT
   9
 $DIMDEC
  70
-    2
+    4
   9
 $DIMTDEC
  70
@@ -801,6 +801,14 @@ $PEXTMAX
  30
 0
   9
+$GRIDMODE
+ 70
+    1
+  9
+$SNAPSTYLE
+ 70
+    0
+  9
 $PLIMMIN
  10
 0
@@ -1107,9 +1115,9 @@ AcDbViewportTableRecord
  21
 1
  12
-5.38112739385468
+3.09140919043663
  22
-4.604940533407762
+2.288367349952115
  13
 0
  23
@@ -1135,9 +1143,9 @@ AcDbViewportTableRecord
  37
 0
  40
-10.91879667553059
+4.96919875728388
  41
-1.727598566308244
+1.756986634264885
  42
 50
  43
@@ -2449,15 +2457,15 @@ Standard
  70
     0
  40
-1
+2.5
  41
 0.1
  42
-0.025
+0.625
  43
 0.38
  44
-0.05
+1.25
  45
 0
  46
@@ -2469,7 +2477,7 @@ Standard
  49
 0.04
 140
-0.1
+2.5
 141
 0.09
 142
@@ -2483,7 +2491,7 @@ Standard
 146
 1
 147
-0.025
+0.625
 148
 0
  71
@@ -2501,7 +2509,7 @@ Standard
  77
     0
  78
-    1
+    8
  79
     0
 170
@@ -2539,7 +2547,7 @@ Standard
 277
     2
 278
-    0
+   44
 279
     0
 280
@@ -2561,7 +2569,7 @@ Standard
 289
     3
 340
-standard
+STANDARD
 341
 
 371
@@ -2729,11 +2737,33 @@ AcDbCircle
  20
 2
  40
-0.6625
+0.5625
   0
 CIRCLE
   5
 51
+100
+AcDbEntity
+  8
+construction
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+0.9999999999999993
+ 20
+4
+ 40
+0.5625
+  0
+CIRCLE
+  5
+52
 100
 AcDbEntity
   8
@@ -2747,33 +2777,11 @@ ByLayer
 100
 AcDbCircle
  10
-1.000000000000001
+1
  20
-2
+0.4999999999999999
  40
-0.5625
-  0
-CIRCLE
-  5
-52
-100
-AcDbEntity
-  8
-1p5mm_clear
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-2.5
- 20
-2
- 40
-0.6625
+0.25
   0
 CIRCLE
   5
@@ -2791,15 +2799,37 @@ ByLayer
 100
 AcDbCircle
  10
-0.9999999999999993
+2.4
  20
 4
  40
-0.5625
+0.25
   0
 CIRCLE
   5
 54
+100
+AcDbEntity
+  8
+1p5mm_black
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+1
+ 20
+2
+ 40
+0.7625
+  0
+CIRCLE
+  5
+55
 100
 AcDbEntity
   8
@@ -2813,33 +2843,11 @@ ByLayer
 100
 AcDbCircle
  10
-0.9999999999999993
+1
  20
 4
  40
-0.6625
-  0
-CIRCLE
-  5
-55
-100
-AcDbEntity
-  8
-1p5mm_black
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-1
- 20
-0.4999999999999999
- 40
-0.3
+0.7625
   0
 CIRCLE
   5
@@ -2847,6 +2855,50 @@ CIRCLE
 100
 AcDbEntity
   8
+1p5mm_clear
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+2.7
+ 20
+2
+ 40
+0.7625
+  0
+CIRCLE
+  5
+57
+100
+AcDbEntity
+  8
+construction
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+2.4
+ 20
+4
+ 40
+0.35
+  0
+CIRCLE
+  5
+58
+100
+AcDbEntity
+  8
 1p5mm_black
   6
 ByLayer
@@ -2859,13 +2911,13 @@ AcDbCircle
  10
 1
  20
-0.4999999999999999
+0.5
  40
-0.25
+0.35
   0
 CIRCLE
   5
-57
+59
 100
 AcDbEntity
   8
@@ -2881,53 +2933,9 @@ AcDbCircle
  10
 2
  20
-0.4999999999999999
+0.5
  40
-0.3
-  0
-CIRCLE
-  5
-58
-100
-AcDbEntity
-  8
-construction
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-2.4
- 20
-4
- 40
-0.25
-  0
-CIRCLE
-  5
-59
-100
-AcDbEntity
-  8
-construction
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-2.4
- 20
-4
- 40
-0.3
+0.35
   0
 ENDSEC
   0
