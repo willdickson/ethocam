@@ -29,4 +29,11 @@ def get_ip_and_hostname():
     else:
         ip_address = netifaces.ifaddresses(config.REQUIRED_IFACE)[netifaces.AF_INET][0]['addr']
     hostname = socket.gethostname()
-    return ip_address, hostname
+    return {'ip': ip_address, 'hostname': hostname}
+
+def get_current_data_dir(datetime_str):
+    datetime_str_mod = datetime_str.replace(' ', '_')
+    current_data_dir = os.path.join(config.BASE_DATA_DIR, datetime_str_mod)
+    return current_data_dir
+
+

@@ -13,7 +13,7 @@ class StatusLogger:
             with open(self.filename,'r') as f: 
                 status_dict = json.load(f)
         except FileNotFoundError:
-                status_dict = {'count': 0, 'last_update': None}
+                status_dict = {'count': 0, 'datetime': None}
         return status_dict
 
     def reset(self):
@@ -26,7 +26,7 @@ class StatusLogger:
         iso_datetime = utility.get_iso_datetime_str()
         status_dict = self.load()
         status_dict['count'] += 1
-        status_dict['last_update'] = iso_datetime
+        status_dict['datetime'] = iso_datetime
         with open(self.filename,'w') as f:
             json.dump(status_dict, f)
         return status_dict
