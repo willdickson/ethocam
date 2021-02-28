@@ -5,12 +5,11 @@ from collections import OrderedDict
 
 class Display:
 
-    FONT_SIZE = 16
-    XPOS_INIT = 8
-
-    def __init__(self):
+    def __init__(self,config):
+        self.font_size = config['Display']['font_size']
+        self.xpos_init = config['Display']['xpos_init']
         self.device = inky.auto()
-        self.font = ImageFont.truetype(font_fredoka_one.FredokaOne, self.FONT_SIZE)
+        self.font = ImageFont.truetype(font_fredoka_one.FredokaOne, self.font_size)
         if self.device.colour == 'red':
             self.color = self.device.RED
         else:
@@ -20,7 +19,7 @@ class Display:
         image = Image.new("P",self.device.resolution)
         draw = ImageDraw.Draw(image)
         _, font_height = self.font.getsize('Sample Text')
-        x, y = self.XPOS_INIT, 0
+        x, y = self.xpos_init, 0
         for item in msg:
             draw.text((x,y), item, self.device.BLACK, self.font)
             y += font_height 

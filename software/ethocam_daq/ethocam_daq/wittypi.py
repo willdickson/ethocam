@@ -4,12 +4,12 @@ from multiprocessing import Process, Queue, Event
 from py_wittypi_device import WittyPiDevice
 
 
-class WittyPi:
+class VoltageMonitor:
 
     MEDIAN_NUM = 10
     MEDIAN_DT = 0.05
 
-    def __init__(self):
+    def __init__(self,config):
         self.device = WittyPiDevice()
 
     @property
@@ -31,7 +31,7 @@ class WittyPi:
 
 class CurrentMonitor:
 
-    def __init__(self):
+    def __init__(self,config):
         self.data_queue = Queue()
         self.done_event = Event()
         self.task = CurrentMonitorTask(self.data_queue, self.done_event)
@@ -55,14 +55,14 @@ class CurrentMonitor:
                 i_list.append(item['i'])
             except queue.Empty:
                 done = True
-        return t_list, i_list 
+        return {'t': t_list, 'i': i_list }
 
 
 class CurrentMonitorTask:
 
     MEDIAN_NUM = 15
     MEDIAN_DT = 0.05
-    SAMPLE_DT = 1.0
+    SAMPLE_DT = 5.0
 
     def __init__(self,data_queue,done_event):
         self.data_queue = data_queue
@@ -96,9 +96,8 @@ if __name__ == '__main__':
         time.sleep(1.0)
     print()
     monitor.stop()
-    t_list, i_list = monitor.data
-    for t,i in zip(t_list,i_list):
-        print(t, i)
+    curr_data = monitor.data
+    print(curr_data)
 
 
 

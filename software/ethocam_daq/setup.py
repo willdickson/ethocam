@@ -18,8 +18,8 @@ setup(
     packages=find_packages(exclude=['examples',]),
     entry_points={
         'console_scripts': [
-            'ethocam-acquire=ethocam_daq.ethocam_cmdline:cmd_acquire_data',
-            'ethocam-reset=ethocam_daq.ethocam_cmdline:cmd_reset_status',
+            'ethocam-acquire=ethocam_daq.cmd_line:cmd_acquire_data',
+            'ethocam-reset=ethocam_daq.cmd_line:cmd_reset_status',
             ]
         }
     )

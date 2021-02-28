@@ -1,21 +1,24 @@
 import os
+import time
 import argparse
-from pprint import pprint
-from . import config
 from . import utility
+from .config import Config
 from .display import Display
-from .status_logger import StatusLogger
-from .light_sensor import LightSensor
-from .temp_humid_sensor import TempHumidSensor
-from .wittypi import WittyPi
+from .status import StatusLogger
+from .light import LightSensor
+from .temp_humid import TempHumidSensor
+from .wittypi import VoltageMonitor
 from .wittypi import CurrentMonitor
+from .video import VideoRecorder
+from pprint import pprint
 
 def cmd_reset_status():
     description_str = 'Reset ethocam acquistion status'
     parser = argparse.ArgumentParser(description=description_str)
     parser.parse_args()
+    config = Config()
     utility.check_base_data_dir()
-    status_logger = StatusLogger(config.STATUS_FILE)
+    status_logger = StatusLogger(config['Logging']['status_file'])
     status_logger.reset()
 
 def cmd_acquire_data():
@@ -23,12 +26,15 @@ def cmd_acquire_data():
     parser = argparse.ArgumentParser(description=description_str)
     parser.parse_args()
 
-    utility.check_base_data_dir()
-
     data = {}
 
+    # Load configuration and check data directory (create if required)
+    config = Config()
+    utility.check_base_data_dir(config)
+
+
     # Update Display to show acquiring message
-    display = Display()
+    display = Display(config)
     if 0:
         msg = [
             f"{status['datetime']}",
@@ -39,17 +45,16 @@ def cmd_acquire_data():
         display.show(msg)
 
     # Update status file
-    status_logger = StatusLogger(config.STATUS_FILE)
+    status_logger = StatusLogger(config)
     status = status_logger.update()
     data['status'] = status
 
     # Get network information infomation
-    host_data = utility.get_ip_and_hostname()
+    host_data = utility.get_ip_and_hostname(config)
 
     # Get current data directory name and create directory
-    current_data_dir = utility.get_current_data_dir(status['datetime'])
-    if 0:
-        os.makedirs(current_data_dir)
+    current_data_dir = utility.get_current_data_dir(config,status['datetime'])
+    os.makedirs(current_data_dir)
 
     # Get temperature and humidity
     th_sensor = TempHumidSensor()
@@ -60,15 +65,30 @@ def cmd_acquire_data():
     light_sensor = LightSensor()
     data['light'] = light_sensor.data 
 
-    # Get battery data
-    wittypi = WittyPi()
+    # Get battery and regulator voltages 
+    volt_monitor = VoltageMonitor(config)
     data['power'] = {}
-    data['power']['input_voltage'] = wittypi.input_voltage
-    data['power']['output_voltage'] = wittypi.output_voltage
+    data['power']['input_voltage'] = volt_monitor.input_voltage
+    data['power']['output_voltage'] = volt_monitor.output_voltage
 
+    # Start current monitor
+    curr_monitor = CurrentMonitor(config)
+    curr_monitor.start()
+    time.sleep(2.0)
+
+    # Record Video
+    vid_param = {
+            'duration': 30.0,
+            'filename': 'vid.h264',
+            }
+    vid_rec = VideoRecorder(vid_param, current_data_dir)
+    vid_rec.run()
+
+    # Stop current monitor and get data
+    time.sleep(2.0)
+    curr_monitor.stop()
+    data['power']['output_current'] = curr_monitor.data
     pprint(data)
-
-
 
     # Update Display to show sleeping message
     if 0:

@@ -5,8 +5,8 @@ from . import utility
 
 class StatusLogger:
 
-    def __init__(self,filename):
-        self.filename  = filename
+    def __init__(self,config):
+        self.filename = config['Logging']['status_file']
 
     def load(self): 
         try:
@@ -29,6 +29,7 @@ class StatusLogger:
         status_dict['datetime'] = iso_datetime
         with open(self.filename,'w') as f:
             json.dump(status_dict, f)
+            f.write('\n')
         return status_dict
 
 
