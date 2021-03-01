@@ -1,4 +1,6 @@
 import os
+import json
+import shutil
 import socket
 import datetime
 import netifaces
@@ -32,7 +34,7 @@ def get_ip_and_hostname(config):
     hostname = socket.gethostname()
     return {'ip': ip_address, 'hostname': hostname}
 
-def get_current_data_dir(config,datetime_str):
+def get_current_data_dir(config, datetime_str):
     """
     Returns the path for current data directory
     """
@@ -41,6 +43,13 @@ def get_current_data_dir(config,datetime_str):
     current_data_dir = os.path.join(base_data_dir, datetime_str_mod)
     return current_data_dir
 
+def save_sensor_data(config, data_dir, sensor_data):
+    """
+    Save sensor data file, in json, to the data directory.
+    """
+    filename = os.path.join(data_dir,config['Sensor']['filename'])
+    with open(filename,'w') as f:
+        json.dump(sensor_data,f)
 
 def make_tarfile(output_filename, source_dir): 
     """
@@ -50,4 +59,22 @@ def make_tarfile(output_filename, source_dir):
     with tarfile.open(output_filename, "w:gz") as tar: 
         tar.add(source_dir, arcname=os.path.basename(source_dir))
 
+def chown(path, user, group=None, recursive=False):
+    """
+    Recersive version of chown command
+    """
+    if group is None:
+        group = user
+    try:
+        if not recursive or os.path.isfile(path):
+            shutil.chown(path, user, group)
+        else:
+            for root, dirs, files in os.walk(path):
+                shutil.chown(root, user, group)
+                for item in dirs:
+                    shutil.chown(os.path.join(root, item), user, group)
+                for item in files:
+                    shutil.chown(os.path.join(root, item), user, group)
+    except OSError as e:
+        raise e 
 

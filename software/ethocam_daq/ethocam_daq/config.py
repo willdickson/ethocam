@@ -1,9 +1,6 @@
 import os
 import configparser
 
-BASE_DATA_DIR = os.path.join(os.path.sep, 'home', 'pi','data')
-STATUS_FILE = os.path.join(BASE_DATA_DIR, 'status.txt')
-REQUIRED_IFACE = 'wlan0'
 
 class Config(configparser.ConfigParser):
 
@@ -19,14 +16,10 @@ class Config(configparser.ConfigParser):
                 print(f'  {k} = {v}')
 
 
-
-
-
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
     config = Config()
     config.print()
-    config['Logging']['status_file']
 
 
 

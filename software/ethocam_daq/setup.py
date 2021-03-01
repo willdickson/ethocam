@@ -15,7 +15,7 @@ setup(
         'License :: OSI Approved :: MIT License', 
         'Programming Language :: Python :: 3.7', 
         ], 
-    packages=find_packages(exclude=['examples',]),
+    packages=find_packages(exclude=['examples', 'config']),
     entry_points={
         'console_scripts': [
             'ethocam-acquire=ethocam_daq.cmd_line:cmd_acquire_data',
