@@ -11,6 +11,8 @@ remote_path = /home/wbd/ethocam_data
 [Video]
 filename = vid.h264
 duration = 120.0
+bitrate = 
+mode = 1080p
 
 [Sensor]
 filename = data.txt

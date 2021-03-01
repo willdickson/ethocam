@@ -29,7 +29,6 @@ class GPS:
             if self.device.satellites is not None:
                 data['satellites'] = self.device.satellites
             if self.device.altitude_m is not None:
-                print("Altitude: {} meters".format(self.device.altitude_m))
                 data['altitude_m'] = self.device.altitude_m
             if self.device.speed_knots is not None:
                 data['speed_knots'] = self.device.speed_knots
