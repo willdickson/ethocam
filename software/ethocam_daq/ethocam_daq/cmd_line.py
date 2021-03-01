@@ -59,7 +59,7 @@ def cmd_acquire_data():
     # Get temperature and humidity
     th_sensor = TempHumidSensor()
     sensor_data['temperature'] = th_sensor.temperature
-    sensor_data['humidity'] = th_sensor.temperature
+    sensor_data['humidity'] = th_sensor.humidity
 
     # Get light sensor reading
     light_sensor = LightSensor()
