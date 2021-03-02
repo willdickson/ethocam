@@ -11,6 +11,8 @@ class TransferAgent:
         self.remote_user = config['Network']['remote_user']
         self.remote_host = config['Network']['remote_host']
         self.remote_path = config['Network']['remote_path']
+        self.ssh_key_file = config['Network']['ssh_key_file']
+        self.ssh_known_hosts = config['Network']['ssh_known_hosts']
         self.video_file = config['Video']['filename']
         self.sensor_file = config['Sensor']['filename']
         self.data_dir = data_dir
@@ -23,8 +25,8 @@ class TransferAgent:
         self.ok = self.remote_host and self.remote_path and self.remote_user
         if self.ok:
             self.ssh = paramiko.SSHClient()
-            self.ssh.load_system_host_keys()
-            self.ssh.connect(self.remote_host,username=self.remote_user)
+            self.ssh.load_system_host_keys(filename=self.ssh_known_hosts)
+            self.ssh.connect(self.remote_host,username=self.remote_user,key_filename=self.ssh_key_file)
             self.scp = scp.SCPClient(self.ssh.get_transport())
         else:
             self.ssh = None

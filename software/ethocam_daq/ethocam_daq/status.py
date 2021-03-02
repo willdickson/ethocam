@@ -27,6 +27,9 @@ class StatusLogger:
         status_dict = self.load()
         status_dict['count'] += 1
         status_dict['datetime'] = iso_datetime
+        status_dir, _ = os.path.split(self.filename)
+        if not os.path.exists(status_dir):
+            os.makedirs(status_dir)
         with open(self.filename,'w') as f:
             json.dump(status_dict, f)
             f.write('\n')

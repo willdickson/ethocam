@@ -32,6 +32,7 @@ def cmd_acquire_data():
 
     # Load configuration and check data directory (create if required)
     config = Config()
+    sensor_data['config'] = config.dict()
     utility.check_base_data_dir(config)
 
     # Update status file

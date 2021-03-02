@@ -1,17 +1,19 @@
 [Logging] 
 data_directory = /home/pi/data
-status_file = status.txt
+status_file = /home/pi/data/status.txt
 
 [Network]
 interface = wlan0
 remote_user = wbd
 remote_host = digdog.local
 remote_path = /home/wbd/ethocam_data
+ssh_key_file = /home/pi/.ssh/id_rsa
+ssh_known_hosts = /home/pi/.ssh/known_hosts
 
 [Video]
 filename = vid.h264
 duration = 120.0
-bitrate = 
+bitrate = 6000000
 mode = 1080p
 
 [Sensor]

@@ -13,7 +13,7 @@ class TempHumidSensor:
 
     @property
     def humidity(self):
-        return self.device.humidity
+        return self.device.relative_humidity
 
 
 
