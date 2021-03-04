@@ -47,4 +47,4 @@ xpos_init = 8
 shutdown_dt = 3.0
 
 [Debug]
-enabled=false
+enabled = no
