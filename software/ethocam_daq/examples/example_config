@@ -9,6 +9,9 @@ remote_host = digdog.local
 remote_path = /home/wbd/ethocam_data
 ssh_key_file = /home/pi/.ssh/id_rsa
 ssh_known_hosts = /home/pi/.ssh/known_hosts
+ssh_port = 22
+ssh_max_attempt = 4
+ssh_attempt_dt = 1.0
 
 [Video]
 filename = vid.h264
@@ -29,6 +32,10 @@ median_dt = 0.05
 sample_dt = 5.0
 pause_dt = 15.0
 
+[Light]
+number_of_reads = 4
+read_dt = 0.05
+
 [GPS]
 max_attempt = 10
 dt = 0.1
@@ -38,3 +45,6 @@ enabled = yes
 font_size = 16
 xpos_init = 8
 shutdown_dt = 3.0
+
+[Debug]
+enabled=false

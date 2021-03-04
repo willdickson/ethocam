@@ -5,6 +5,11 @@ import socket
 import datetime
 import netifaces
 
+def debug_print(msg,config):
+    debug_enabled = config['Debug'].getboolean('enabled')
+    if debug_enabled:
+        print(msg)
+
 def check_base_data_dir(config, create=True):
     """
     Checks to see whether or not the base data director exists. If it
@@ -50,6 +55,7 @@ def save_sensor_data(config, data_dir, sensor_data):
     filename = os.path.join(data_dir,config['Sensor']['filename'])
     with open(filename,'w') as f:
         json.dump(sensor_data,f)
+    chown(filename, 'pi') 
 
 def make_tarfile(output_filename, source_dir): 
     """

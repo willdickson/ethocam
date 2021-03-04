@@ -1,3 +1,4 @@
+import sys
 import inky
 import font_fredoka_one
 from PIL import Image, ImageDraw, ImageFont
@@ -10,12 +11,17 @@ class Display:
         self.xpos_init = config['Display'].getint('xpos_init')
         self.enabled = config['Display'].getboolean('enabled')
         if self.enabled:
-            self.device = inky.auto()
-            self.font = ImageFont.truetype(font_fredoka_one.FredokaOne, self.font_size)
-            if self.device.colour == 'red':
-                self.color = self.device.RED
-            else:
-                self.color = self.device.YELLOW
+            try:
+                self.device = inky.auto()
+            except RuntimeError as e:
+                print('Display: {}'.format(e), file=sys.stderr)
+                self.enabled = False
+        if self.enabled:
+           self.font = ImageFont.truetype(font_fredoka_one.FredokaOne, self.font_size)
+           if self.device.colour == 'red':
+               self.color = self.device.RED
+           else:
+               self.color = self.device.YELLOW
 
     def show(self, msg):
         if self.enabled:

@@ -1,5 +1,7 @@
 import os
 import subprocess
+from . import utility
+
 
 class VideoRecorder:
 
@@ -41,6 +43,7 @@ class VideoRecorder:
             cmd.extend(['-w', f'{self.width}', '-h', f'{self.height}'])
         rtn = subprocess.call(cmd)
         if rtn == 0:
+            utility.chown(filename, 'pi') 
             return True 
         else:
             return False

@@ -33,6 +33,7 @@ class StatusLogger:
         with open(self.filename,'w') as f:
             json.dump(status_dict, f)
             f.write('\n')
+        utility.chown(status_dir, 'pi') 
         return status_dict
 
 
