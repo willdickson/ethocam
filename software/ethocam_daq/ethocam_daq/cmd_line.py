@@ -42,18 +42,26 @@ def cmd_acquire_data():
     sensor_data['status'] = status
 
     # Get network information infomation
-    utility.debug_print('getting network information',config)
-    host_data = utility.get_ip_and_hostname(config)
+    if config['Network']['enabled'] == 'yes':
+        utility.debug_print('getting network information',config)
+        host_data = utility.get_ip_and_hostname(config)
 
     # Update Display to show acquiring message
     utility.debug_print('display acquiring message',config)
     display = Display(config)
-    msg = [
-        f"{status['datetime']}",
-        f"{host_data['hostname']} {host_data['ip']}",
-        f"mode = acquiring", 
-        f"count = {status['count']}",
-        ]
+    if config['Network']['enabled'] == 'yes':
+        msg = [
+                f"{status['datetime']}",
+                f"{host_data['hostname']} {host_data['ip']}",
+                f"mode = acquiring", 
+                f"count = {status['count']}", 
+                ]
+    else:
+        msg = [
+                f"{status['datetime']}",
+                f"mode = acquiring", 
+                f"count = {status['count']}", 
+                ]
     display.show(msg)
 
     # Get current data directory name and create directory
@@ -94,10 +102,11 @@ def cmd_acquire_data():
     utility.debug_print('video recording done',config)
 
     # Send video data to remote host vis scp
-    utility.debug_print('begin video file transfer',config)
-    transfer_agent = TransferAgent(config, data_dir)
-    transfer_agent.send_data_directory()
-    utility.debug_print('video file transfer done',config)
+    if config['Network']['enabled'] == 'yes':
+        utility.debug_print('begin video file transfer',config)
+        transfer_agent = TransferAgent(config, data_dir)
+        transfer_agent.send_data_directory()
+        utility.debug_print('video file transfer done',config)
 
     # Get GPS reading
     utility.debug_print('get gps reading',config)
@@ -113,9 +122,10 @@ def cmd_acquire_data():
     utility.save_sensor_data(config, data_dir, sensor_data)
 
     # Send sensor data to remote host vis scp
-    utility.debug_print('send sensor data',config)
-    transfer_agent.send_sensor_file()
-    transfer_agent.close()
+    if config['Network']['enabled'] == 'yes':
+        utility.debug_print('send sensor data',config)
+        transfer_agent.send_sensor_file()
+        transfer_agent.close()
 
     # Change owner of data file from root from pi user 
     utility.chown(data_dir, 'pi', recursive=True) 
@@ -124,7 +134,7 @@ def cmd_acquire_data():
     utility.debug_print('dislplay sleeping message',config)
     msg = [
         f"{status['datetime']}",
-        f"{host_data['hostname']} {host_data['ip']}",
+        #f"{host_data['hostname']} {host_data['ip']}",
         f"mode = sleeping", 
         f"count = {status['count']}",
         ]
