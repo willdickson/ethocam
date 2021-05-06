@@ -23,8 +23,7 @@ def get_iso_datetime_str():
     """
     Returns iso datetime string for current time
     """ 
-    return datetime.datetime.utcnow().isoformat(sep=' ',timespec='seconds')
-
+    return datetime.datetime.now().isoformat(sep=' ',timespec='seconds')
 
 def get_ip_and_hostname(config):
     """

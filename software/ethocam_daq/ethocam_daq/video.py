@@ -6,6 +6,7 @@ from . import utility
 class VideoRecorder:
 
     def __init__(self,config,directory=None):
+        self.config = config
         self.filename = config['Video']['filename']
         self.duration = config['Video'].getfloat('duration')
         try:
@@ -41,6 +42,14 @@ class VideoRecorder:
             cmd.extend(['-b', f'{self.bitrate}'])
         if self.mode is not None:
             cmd.extend(['-w', f'{self.width}', '-h', f'{self.height}'])
+
+        setting_keys = ['ex', 'awb', 'awbg', 'ss', 'ISO', 'co', 'sh', 'drc', 'ifx']
+        for key in setting_keys:
+            try:
+                value = self.config['Video'][key]
+            except KeyError:
+                continue
+            cmd.extend([f'-{key}', value])
         rtn = subprocess.call(cmd)
         if rtn == 0:
             utility.chown(filename, 'pi') 
