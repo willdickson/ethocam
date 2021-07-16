@@ -22,6 +22,12 @@ class StatusLogger:
         except FileNotFoundError:
             pass
 
+    def read(self):
+        iso_datetime = utility.get_iso_datetime_str()
+        status_dict = self.load()
+        status_dict['datetime'] = iso_datetime
+        return status_dict
+
     def update(self):
         iso_datetime = utility.get_iso_datetime_str()
         status_dict = self.load()

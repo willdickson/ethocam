@@ -43,7 +43,7 @@ class VideoRecorder:
         if self.mode is not None:
             cmd.extend(['-w', f'{self.width}', '-h', f'{self.height}'])
 
-        setting_keys = ['ex', 'awb', 'awbg', 'ss', 'ISO', 'co', 'sh', 'drc', 'ifx']
+        setting_keys = ['ISO', 'co', 'sh', 'drc', 'ifx']
         for key in setting_keys:
             try:
                 value = self.config['Video'][key]

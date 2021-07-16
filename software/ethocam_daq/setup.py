@@ -20,6 +20,7 @@ setup(
         'console_scripts': [
             'ethocam-acquire=ethocam_daq.cmd_line:cmd_acquire_data',
             'ethocam-reset=ethocam_daq.cmd_line:cmd_reset_status',
+            'ethocam-info=ethocam_daq.cmd_line:cmd_display_info',
             ]
         }
     )
