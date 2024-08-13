@@ -27,11 +27,11 @@ class Display:
         if self.enabled:
             image = Image.new("P",self.device.resolution)
             draw = ImageDraw.Draw(image)
-            _, font_height = self.font.getsize('Sample Text')
+            # _, font_height = self.font.getsize('Sample Text')
             x, y = self.xpos_init, 0
             for item in msg:
                 draw.text((x,y), item, self.device.BLACK, self.font)
-                y += font_height 
+                y += self.font_size
             image = image.transpose(Image.ROTATE_180)
             self.device.set_border(self.color)
             self.device.set_image(image)

@@ -1,0 +1,58 @@
+[Logging] 
+data_directory = /home/pi/data
+status_file = /home/pi/data/status.txt
+
+[Network]
+enabled = no
+interface = wlan0
+remote_user = wbd
+remote_host = digdog.local
+remote_path = /home/wbd/ethocam_data
+ssh_key_file = /home/pi/.ssh/id_rsa
+ssh_known_hosts = /home/pi/.ssh/known_hosts
+ssh_port = 22
+ssh_max_attempt = 4
+ssh_attempt_dt = 1.0
+
+[Video]
+filename = vid.h264
+duration = 30.0
+bitrate = 20000000
+mode = 1080p
+co = 0
+sh = 10
+lux_threshold = 0.6
+#full_spectrum_threshold = 70000
+full_spectrum_threshold = 20000000000000000
+manual_focus = 8
+
+[Sensor]
+filename = data.txt
+
+[Voltage]
+median_values = 10
+median_dt = 0.05
+
+[Current]
+median_values = 10
+median_dt = 0.05
+sample_dt = 5.0
+pause_dt = 15.0
+
+[Light]
+number_of_reads = 4
+read_dt = 0.05
+
+[GPS]
+enabled = no
+max_attempt = 10
+dt = 0.1
+
+[Display]
+enabled = yes
+font_size = 16
+xpos_init = 8
+shutdown_dt = 3.0
+
+[Debug]
+enabled = yes
